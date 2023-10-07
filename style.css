@@ -83,10 +83,10 @@ header{
 }
 
 .titulo-principal{
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
 }
 
 .titulo-principal h1{
@@ -94,15 +94,20 @@ header{
     font-family: var(--fonte-titulo);
     font-size: 2.7em;
     letter-spacing: 1px;
+    line-height: 60px;
 }
 
 .caixa-pesquisa{
     position: absolute;
-    top: 48%;
     left: 50%;
     transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #fff;
-    height: 40px;
+    margin-top: 30px;
+    height: 49px;
+    width: 410px;
     border-radius: 40px;
     padding: 10px;
 }
@@ -116,17 +121,18 @@ header{
     color: #000;
     font-size: 0.8em;
     line-height: 23px;
-    width: 300px;
+    width: 100%;
 }
 
 .caixa-btn{
     position: absolute;
-    left: 89%;
-    transform: translate(0, -91%);
+    top: 50%;
+    left: 50%;
+    transform: translate(400%, -50%);
     color: #fff;
     text-decoration: none;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: #EB1700;
     display: flex;
@@ -144,20 +150,62 @@ header{
     font-size: 1em;
 }
 
-.link-endereço{
-    position: absolute;
-    top: 57%;
-    left: 50%;
-    transform: translate(-50%);
+.link-endereco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
 
-.link-endereço a{
+.link-endereco a{
     color: #fff;
     font-family: var(--fonte-corpo);
     font-size: 0.8em;
+    transition: 0.3s;
 }
 
-.link-endereço a:hover{
+.link-endereco a:hover{
+    font-weight: bold;
     text-decoration: underline;
     color: #000;
 }
+
+.container-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-main h2{
+    color: #000;
+    font-family: var(--fonte-titulo);
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 5px;
+    line-height: 25px;
+    letter-spacing: 0.75px;
+}
+
+.container-main p{
+    color: #000;
+    font-family: var(--fonte-corpo);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.container-main a{
+    text-decoration: none;
+    color: #EB1700;
+    font-family: var(--fonte-corpo);
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.container-main a:hover{
+    text-decoration: underline;
+    color: #da1701;
+}
+

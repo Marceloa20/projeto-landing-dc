@@ -170,15 +170,15 @@ header{
     color: #000;
 }
 
-.container-main{
+.container-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    margin-top: 128px;
+    width: 100%;
 }
 
-.container-main h2{
+.container-section h2{
     color: #000;
     font-family: var(--fonte-titulo);
     font-weight: bold;
@@ -188,14 +188,14 @@ header{
     letter-spacing: 0.75px;
 }
 
-.container-main p{
+.container-section p{
     color: #000;
     font-family: var(--fonte-corpo);
     font-size: 0.9em;
     font-weight: 500;
 }
 
-.container-main a{
+.container-section a{
     text-decoration: none;
     color: #EB1700;
     font-family: var(--fonte-corpo);
@@ -204,8 +204,60 @@ header{
     transition: 0.3s;
 }
 
-.container-main a:hover{
+.container-section a:hover{
     text-decoration: underline;
     color: #da1701;
 }
 
+.container-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin-top: 122px;
+    padding: 10px;
+}
+
+.container-app .info-app{
+    width: 80%;
+    padding: 40px;
+}
+
+.info-app h2{
+    font-family: var(--fonte-titulo);
+    font-size: 1.6em;
+    font-weight: bold;
+    letter-spacing: 0.75px;
+    line-height: 30px;
+    color: #000;
+}
+
+.info-app p{
+    font-family: var(--fonte-corpo);
+    font-size: 0.8em;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.info-app button{
+    border: none;
+    border-radius: 40px;
+    width: 25%;
+    padding: 5px;
+    background-color: #EB1700;
+    color: #fff;
+    font-family: var(--fonte-corpo);
+    font-size: 0.8em;
+}
+
+.info-app button:hover{
+    background-color: #da1701;
+}

@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body{
@@ -213,6 +214,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -222,7 +224,6 @@ header{
     align-items: center;
     max-width: 80%;
     margin-top: 122px;
-    padding: 10px;
 }
 
 .container-app .info-app{
@@ -260,4 +261,157 @@ header{
 
 .info-app button:hover{
     background-color: #da1701;
+}
+
+.container-app-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF0ED;
+    max-width: 100%;
+    padding: 70px 90px;
+}
+
+.info-app-2{
+    padding: 70px;
+}
+
+.info-app-2 h2{
+    font-family: var(--fonte-titulo);
+    font-size: 1.6em;
+    font-weight: bold;
+    letter-spacing: 0.75px;
+    line-height: 30px;
+    color: #000;
+}
+
+.info-app-2 p{
+    font-family: var(--fonte-corpo);
+    font-size: 0.8em;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.info-app-2 button{
+    border: none;
+    border-radius: 40px;
+    width: 30%;
+    padding: 5px;
+    background-color: #EB1700;
+    color: #fff;
+    font-family: var(--fonte-corpo);
+    font-size: 0.8em;    
+}
+
+.info-app-2 button:hover{
+    background-color: #da1701;    
+}
+
+.informacoes{
+    display: flex;
+    justify-content: center;
+    background-color: #191919;
+    color: #fff;
+    width: 100%;
+}
+
+.informacoes .container-cidade-cozinha{
+    display: flex;
+    padding: 20px;
+    width: 100%; 
+}
+
+.informacoes .titulo-rodape h4 {
+    color: #fafafa;
+    font-family: var(--fonte-titulo);
+    font-size: 0.9em;
+    letter-spacing: 0.75px;
+}
+
+.informacoes .lista-cidades, .lista-cozinhas{
+    display: flex;
+    width: 100%;
+}
+
+.informacoes .lista-cidades ul, .lista-cozinhas ul {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.informacoes .cidades, .cozinhas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.informacoes .cidades a, .cozinhas a{
+    color: #a9a9a9;
+    text-decoration: none;
+    font-family: var(--fonte-corpo);
+    font-size: 0.8em;
+    font-weight: normal;
+    letter-spacing: 0.75px;
+    padding: 10px 0;
+    transition: all 0.3s;
+}
+
+.informacoes .cidades a:hover, .cozinhas a:hover{
+    color: #797979;
+}
+
+.termos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #191919;
+    width: 100%;
+}
+
+.termos img {
+    margin-left: 20px;
+}
+
+.termos ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.termos ul li {
+    padding: 0 15px;
+}
+
+.termos ul li a{
+    text-decoration: none;
+    color: #a9a9a9;
+    font-family: var(--fonte-corpo);
+    font-size: 0.8em;
+    letter-spacing: 0.75px;
+    transition: all 0.3s;
+}
+
+.termos ul li a:hover{
+    color: #797979;
+}
+
+.termos .redes-sociais {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.termos .redes-sociais a {
+    padding: 10px;
+}
+
+.termos .redes-sociais a:hover{
+    border: 2px solid rgba(255, 255, 255, 0,637);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0,623);
 }
